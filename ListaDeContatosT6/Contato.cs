@@ -49,13 +49,13 @@ namespace ListaDeContatosT6
             }
             set
             {
-                if (value.Length == 13)
+                if (value.Length == 11)
                 {
                     telefone = value;
                 }
                 else
                 {
-                    telefone = "(00) 00000-0000";
+                    telefone = "00000000000";
                 }
             }
         }
@@ -65,7 +65,7 @@ namespace ListaDeContatosT6
         {
             Nome = "Cláudio";
             Sobrenome = "Genésio II";
-            Telefone = "(11) 98888-7777";
+            Telefone = "11988887777";
         }
         
         // Sobrecarga do método construtor da classe Contato.
@@ -86,7 +86,7 @@ namespace ListaDeContatosT6
             saida += String.Format("{0} {1} ", Nome, Sobrenome);
             saida += String.Format("({0}) {1}-{2}", 
                 Telefone.Substring(0,2), 
-                Telefone.Substring(3,5),
+                Telefone.Substring(2,5),
                 Telefone.Substring(7,4));
             
             return saida;
